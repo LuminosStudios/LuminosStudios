@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notícias - Luminos Studios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="noticias.html" class="aqui">Notícias</a></li>
+        <li><a href="inscrever.html">Audições</a></li>
+      </ul>
+    </nav>
+    <h1>Últimas Notícias</h1>
+    <a href="MoviesSeries.html" class="cta-button">Assista Agora</a>
+  </header>
+
+  <div id="contador-noticias">
+    Total de Notícias: <span id="total-noticias">1</span>
+  </div>
+
+  <div id="noticias">
+    <div class="noticia">
+      <h2>Será lançado um novo filme?</h2>
+      <p>Bom, apesar de estarmos em período de aula, vamos lançar um novo filme. De acordo com nossas estatisticas, iremos lançar o filme "Aniversário Mortal" em janeiro de 2024. Bom isso e uma data que não pode ser prevista, pois esse filme contará com gravações aereas e em lugares pagos, mas provavelmente iremos lança-lo em janeiro de 2024.</p>
+      <button onclick="showNoVacancyModal1()">Ver matéria</button>
+    </div>
+    <div id="modal1" class="modal1">
+      <div class="modal-content1">
+        <span class="close" onclick="closeModal1()">&times;</span>
+        <h2>Matéria sobre o Filme</h2>
+        <p>O filme se passa em uma cidade chamada "Willow Creek", nessa cidade tem um assassino a solta, onde ele busca saber o dia do seu aniversário, ele irá matar todos no dia especial de cada um (ou seja, seu aniversário). Após vários dias, um grupo de amigos se reúne para descobrir quem é o assassino. Nenhum deles sabe que o assassino está entre eles.</p>
+        <button onclick="mostrarAlerta()">Quero Assistir</button>
+      </div>
+    </div>
+
+    <script>
+      function mostrarAlerta() {
+        alert('Desculpe, o conteúdo não está disponível no momento.');
+      }
+    </script>
+
+    <div class="noticia">
+      <h2></h2>
+      <p></p>
+    </div>
+    <div id="noticias">
+      <div class="noticia">
+        <h2></h2>
+        <p></p>
+      </div>
+      <br>
+    <!-- Adicione mais notícias conforme necessário -->
+  </div>
+  
+
+    <!-- Restante das notícias ... -->
+
+  </div>
+
+  <script src="script.js"></script>
+
+  <footer>
+    <p>&copy; 2023 Luminos Studios</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,534 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  /* Estilos do cabeçalho */
+  header {
+    background-color: #24292e;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  header nav ul li a:hover {
+    color: #0099ff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-content h1 {
+    margin-right: 20px;
+  }
+
+  .aqui {
+    color: #0077ff;
+  }
+  
+/* Estilos para o contador de notícias */
+#contador-noticias {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.2em;
+  }
+  
+  #contador-noticias span {
+    font-weight: bold;
+  }
+  
+  /* Estilos para as notícias */
+  .noticia {
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  .noticia h2 {
+    color: #333;
+  }
+  
+  .noticia p {
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .noticia:last-child {
+    margin-bottom: 0;
+  }
+
+
+  /* Estilos do rodapé */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #24292e;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  
+
+  .cta-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #00a2ff;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #00507e;
+  }
+
+  /* Estilos para o conteúdo sobre a Luminos Studios */
+#about-content {
+    padding: 30px;
+    max-width: 800px;
+  }
+  
+  #about-content h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  #about-content h2 {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  #about-content p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.5;
+  }
+  /* Estilos para a logo */
+#logo {
+    max-width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    margin-right: 20px; /* Espaçamento entre a logo e o texto */
+  }
+  
+  /* Estilos para o conteúdo de texto */
+  #text-content {
+    display: inline-block; /* Para manter a logo e o texto em linha */
+    vertical-align: top; /* Alinha com o topo */
+    max-width: calc(100% - 120px); /* Ajuste o tamanho conforme necessário */
+  }
+  
+  /* Restante dos estilos ... */
+  
+.jogos >h1{
+    text-align: center;
+}
+  /* Estilos para o jogo de adivinhação */
+#game-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  #game-container input {
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  #game-container button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3498db;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #game-container button:hover {
+    background-color: #2980b9;
+  }
+  
+  #result-message {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  /* Restante dos estilos ... */
+  /* Estilos para o jogo de cliques */
+#click-game-container {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  #click-button {
+    padding: 20px 40px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #click-button:hover {
+    background-color: #2980b9;
+  }
+  
+  #click-count {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  
+  /* Layout flexível */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .container .noticia {
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .container .noticia:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Estilos para a galeria de filmes e séries */
+#movies-series-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .movie-card {
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .movie-card a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .movie-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .movie-card h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .movie-card p {
+    font-size: 1em;
+    color: #555;
+  }
+
+  /* Estilos para o botão dentro da notícia */
+
+
+  .btn-noticias {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #00a2ff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  /* Estilos para o botão "Assistir" */
+button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #00a2ff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
+    background-color: #00507e;
+  }
+
+  .series-container {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .serie-card {
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .serie-card img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .serie-card h2 {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  
+  /* Adicione outros estilos conforme necessário */
+  
+  .audition-container {
+    text-align: center;
+    padding: 50px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  .audition-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .audition-container p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+  }
+  
+  .audition-container button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff0000;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .audition-container button:hover {
+    background-color: #c00303;
+  }
+  
+  /* Estilos para o modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+  }
+  
+  .modal-content {
+    background-color: #ffffff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  .modal-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: red;
+  }
+  
+  .modal-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .modal-content .close {
+    color: #000000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .modal-content .close:hover,
+  .modal-content .close:focus {
+    color: red;
+    text-decoration: none;
+  }
+
+  .audição {
+    text-align: center;
+    padding: 50px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  .audição h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .audição h2 {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .modal1 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+  }
+  
+  .modal-content1 {
+    background-color: #ffffff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 50%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  .modal-content1 h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .modal-content1 p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .modal-content1 .close {
+    color: #000000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .modal-content1 .close:hover,
+  .modal-content1 .close:focus {
+    color: rgb(139, 139, 139);
+    text-decoration: none;
+  }
+
+  button1 {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: red;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  button1:hover {
+    background-color: #c00303;
+  }
+
+  /* Estilos para tornar o menu responsivo em dispositivos móveis */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav li {
+    margin: 10px 0;
+    display: block;
+  }
+}

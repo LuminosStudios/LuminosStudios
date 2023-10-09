@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audição - Luminos Studios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="noticias.html">Notícias</a></li>
+            <li><a href="inscrever.html" class="aqui">Audições</a></li>
+            <!-- Adicione mais itens de menu conforme necessário -->
+          </ul>
+        </nav>
+        <h1>Bem-vindo à Luminos Studios</h1>
+        <a href="MoviesSeries.html" class="cta-button">Assista Agora</a>
+      </header>
+
+<div class="audição"><h1>Voce tem um sonho de atuar?</h1>
+<h2>Que tal se inscrever para uma Audição na Luminos Studios.<br>
+    Seu sonho de atuar pode ser realizado aqui na Luminos!
+</h2></div>
+  <div class="audition-container">
+    <h1>Audição para Filmes e Séries</h1>
+    <p>Clique no botão abaixo para se inscrever para um filme ou série:</p>
+    <button onclick="showNoVacancyModal()">Inscrever para filme/serie</button>
+  </div>
+  <br>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Vagas Indisponíveis ❌</h2>
+      <p>Não há vagas disponíveis para audição no momento. Por favor, tente mais tarde.<br>
+         Assim que tivermos vagas para audições, iremos disponibilizar as inscrições apartir
+         do botão "Inscrever para filme/serie".</p>
+         <button1 onclick="mostrarAlerta1()">Mais inscrições</button1>
+    </div>
+  </div>
+
+  <script>
+    function mostrarAlerta1() {
+      alert('Desculpe, mas não está disponível no momento.');
+    }
+  </script>
+
+  <footer>
+    <p>&copy; 2023 Luminos Studios</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
